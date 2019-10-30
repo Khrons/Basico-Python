@@ -1,0 +1,15 @@
+from random import randint
+secret = randint(1,100)
+print("Welcome!")
+guess = 0
+while guess != secret:
+    g = input("Guess the Number: ")
+    guess = int(g)
+    if guess == secret:
+        print("You Win")
+    else:
+        if guess > secret:
+            print("Too High, try again!")
+        else:
+            print("Too Low, try again!")
+print("Game Over")
